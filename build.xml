@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="war demo" default="deploy">
+<property name="deployfolder" value="/home/hari/tomcat8/webapps"/> 
+  <target name="build">
+       <war warfile="Dynamicwebapp.war">
+           <fileset dir="Dynamicwebapp"> 
+           </fileset> 
+       </war>
+   </target>
+
+   <target name="deploy" depends="build">
+    <copy file="Dynamicwebapp.war" todir="${deployfolder}">
+    </copy>
+
+   </target>
+
+</project>

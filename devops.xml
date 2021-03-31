@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="demo for ant" default="run">
+  <target name="compile">
+    <javac  includeantruntime="false" srcdir="./src" destdir="target">
+       </javac>
+   
+  </target>
+
+  <target name="run" depends="compile">
+    <java classname="Helloworld">
+        <classpath path="target" >
+       </classpath>
+    </java>
+  </target>
+  
+
+</project>
