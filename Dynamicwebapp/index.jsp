@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-echo "hello"
+
 <sql:query var="rs" dataSource="jdbc/TestDB">
 select empid, empname, empsal from emp
 </sql:query>
