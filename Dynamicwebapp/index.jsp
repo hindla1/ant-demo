@@ -8,7 +8,7 @@ select empid, empname, empsal from emp
 
 <html>
   <head>
-    <title>Emp Table</title>
+    <title>Emp Table 1</title>
   </head>
   <body>
 
